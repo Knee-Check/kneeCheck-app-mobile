@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_scan_pasien"
+        android:icon="@drawable/ic_scan_selector"
+        android:title="Scan" />
+    <item
+        android:id="@+id/navigation_history_pasien"
+        android:icon="@drawable/ic_histori_selector"
+        android:title="History" />
+    <item
+        android:id="@+id/navigation_profile_pasien"
+        android:icon="@drawable/ic_profile_selector"
+        android:title="Profile" />
+</menu>

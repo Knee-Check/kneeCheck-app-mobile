@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_scan_pasien">
+
+    <fragment
+        android:id="@+id/navigation_scan_pasien"
+        android:name="com.example.kneecheck.pasien.ScanPasienFragment"
+        android:label="Scan Pasien"
+        tools:layout="@layout/fragment_scan_pasien" >
+        <action
+            android:id="@+id/action_navigation_scan_pasien_to_hasilPredictPasienFragment"
+            app:destination="@id/hasilPredictPasienFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_history_pasien"
+        android:name="com.example.kneecheck.pasien.HistoryPasienFragment"
+        android:label="History Pasien"
+        tools:layout="@layout/fragment_history_pasien" >
+        <action
+            android:id="@+id/action_navigation_history_pasien_to_detailHistoryFragment2"
+            app:destination="@id/detailHistoryFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile_pasien"
+        android:name="com.example.kneecheck.pasien.ProfilePasienFragment"
+        android:label="Profile Pasien"
+        tools:layout="@layout/fragment_profile_pasien" />
+    <fragment
+        android:id="@+id/detailHistoryFragment2"
+        android:name="com.example.kneecheck.DetailHistoryFragment"
+        android:label="fragment_detail_history"
+        tools:layout="@layout/fragment_detail_history" >
+        <action
+            android:id="@+id/action_detailHistoryFragment2_to_navigation_history_pasien"
+            app:destination="@id/navigation_history_pasien" />
+    </fragment>
+    <fragment
+        android:id="@+id/hasilPredictPasienFragment"
+        android:name="com.example.kneecheck.pasien.HasilPredictPasienFragment"
+        android:label="fragment_hasil_predict_pasien"
+        tools:layout="@layout/fragment_hasil_predict_pasien" >
+        <action
+            android:id="@+id/action_hasilPredictPasienFragment_to_navigation_scan_pasien"
+            app:destination="@id/navigation_scan_pasien" />
+    </fragment>
+</navigation>

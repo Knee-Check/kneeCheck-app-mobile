@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_register"
+    tools:context=".RegisterPasienActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/icon_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="402dp"
+        android:layout_height="541dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_lengkapi"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Lengkapi data diri Anda"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etNamaPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_input2"
+            android:fontFamily="@font/inter"
+            android:hint="Nama lengkap"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingStart="18dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etGenderPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_input2"
+            android:fontFamily="@font/inter"
+            android:hint="Jenis kelamin"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingStart="18dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etTanggalLahirPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_input2"
+            android:fontFamily="@font/inter"
+            android:hint="Tanggal lahir"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:paddingStart="18dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etDomisiliPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_input2"
+            android:fontFamily="@font/inter"
+            android:hint="Kota domisili"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingStart="18dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etEmailPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_input2"
+            android:fontFamily="@font/inter"
+            android:hint="Alamat Email"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingStart="18dp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etPasswordPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_input2"
+            android:fontFamily="@font/inter"
+            android:hint="Kata Sandi"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingStart="18dp"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btnDaftarPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_daftar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/tvBlmPunyaAkun"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tvBlmPunyaAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/inter"
+        android:text="Sudah punya akun?"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
